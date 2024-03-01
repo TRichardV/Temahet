@@ -45,3 +45,15 @@ body {
   .option p {
     margin: 0;
   }
+  .btn-primary {
+    background-color: #2e8b57;
+    border-color: #2e8b57;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3ca374;
+}
+.ftext{
+  margin-top: 5%;
+}
