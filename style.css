@@ -57,3 +57,9 @@ body {
 .ftext{
   margin-top: 5%;
 }
+.ptext{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
