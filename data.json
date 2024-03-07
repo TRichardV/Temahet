@@ -1,0 +1,180 @@
+[
+    {
+        "Questions": [
+            {
+                "Question": "Mikor szoktál felkelni hétvégente?",
+                "Answers": [
+                    "Általában koránkelő vagyok, legkésőbb 7-kor már ébren vagyok.",
+                    "Korán kelni? Soha! Ha lehet, akkor délnél előbb fel sem kelek.",
+                    "Rosszul alszom, ezért mindig addig alszom, amíg csak lehet."
+                ],
+                "AnswerValues": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "Question": "Szoktál esténként nassolni?",
+                "Answers": [
+                    "Egy jó film vagy sorozat, egy pizza, chips vagy pattogatott kukorica… ez az ideális esti program. ;)",
+                    "Igen, de ha lehet, akkor aszalt gyümölcsöt vagy olajos magvakat.",
+                    "Este sosem. Vigyázok az alakomra!"
+                ],
+                "AnswerValues": [
+                    "3",
+                    "2",
+                    "1"
+                ]
+            },
+            {
+                "Question": "Mennyit sportolsz?",
+                "Answers": [
+                    "A sport az életem. Minden nap van valami: edzés, futás, aerobic…",
+                    "Heti 3 alkalommal biztos. Szeretek mozogni.",
+                    "Biztos, hogy nem. Lustaság fél egészség!"
+                ],
+                "AnswerValues": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "Question": "Mi a kedvenc sportod?",
+                "Answers": [
+                    "Csapatjátékok leginkább",
+                    "Az egyszemélyes sportok híve vagyok",
+                    "Sport? Mi is az?"
+                ],
+                "AnswerValues": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "Question": "Mi az, amit a legszívesebben megennél most?",
+                "Answers": [
+                    "Egy jó steak vagy oldalas, ha lehet hasábbal és egy kis salátával.",
+                    "Egy lazacfilé salátával és dresszinggel jólesne most.",
+                    "Elég lesz egy csokitorta is, köszönöm!"
+                ],
+                "AnswerValues": [
+                    "2",
+                    "1",
+                    "3"
+                ]
+            },
+            {
+                "Question": "Milyen táplálékkiegészítőket szedsz rendszeresen?",
+                "Answers": [
+                    "Az meg mi?",
+                    "Vitaminokat, abból is inkább C-, D vitamin.",
+                    "Pro- és prebiotikumokat, vitaminokat és proteint, ha edzek."
+                ],
+                "AnswerValues": [
+                    "3",
+                    "2",
+                    "1"
+                ]
+            },
+            {
+                "Question": "Mennyi húst eszel egy héten?",
+                "Answers": [
+                    "Legalább 4-5 kg-ot biztosan. Kell az erő.",
+                    "Általában 2 kg, vagy annál kevesebb.",
+                    "Nem eszem húst, vegetáriánus vagyok."
+                ],
+                "AnswerValues": [
+                    "3",
+                    "2",
+                    "1"
+                ]
+            },
+            {
+                "Question": "Próbáltad már a húshelyettesítő termékeket?",
+                "Answers": [
+                    "Igen, nekem ízlett.",
+                    "Nem, minek? Ha húst akarok enni, akkor azt eszem.",
+                    "Igen, de nem az én világom."
+                ],
+                "AnswerValues": [
+                    "1",
+                    "3",
+                    "2"
+                ]
+            },
+            {
+                "Question": "Mennyi tejterméket fogyasztasz?",
+                "Answers": [
+                    "Minden, ami tej, sajt, az jöhet. Bármennyi, bármikor.",
+                    "Csak akkor, ha megkívánom. Amúgy nem vagyok nagy sajtos.",
+                    "Nem eszem ilyesmit. Ha igen, az is inkább növényi."
+                ],
+                "AnswerValues": [
+                    "3",
+                    "2",
+                    "1"
+                ]
+            },
+            {
+                "Question": " Tudod mit jelent a mikrobiom?",
+                "Answers": [
+                    "A velünk élő mikróbák, ezek egy része a bélrendszerben található jótékony baktériumok.",
+                    "A bélben található rossz baktériumok.",
+                    "Nem tudom mi az, de nem is szeretem ezeket a latin szavas dolgokat."
+                ],
+                "AnswerValues": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "Question": " Mennyi vizet iszol egy nap?",
+                "Answers": [
+                    "1,5 L lecsúszik nagy nehezen.",
+                    "Inkább Cola, Fanta, Hell. Ez számít?",
+                    "2-2,5 L napi szinten megvan."
+                ],
+                "AnswerValues": [
+                    "2",
+                    "3",
+                    "1"
+                ]
+            },
+            {
+                "Question": " Mennyi a képernyőidőd a telefonodon egy hét alatt?",
+                "Answers": [
+                    "50 óra fölött",
+                    "25 óra vagy alatta",
+                    "50 és 25 óra között"
+                ],
+                "AnswerValues": [
+                    "3",
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "Question": " Hogy alszol el?",
+                "Answers": [
+                    "Lefekvés előtt olvasok egy könyvet vagy beszélgetek a szüleimmel/tesómmal, alváskor sötét a szobám.",
+                    "Tévézek vagy zenét hallgatok előtte.",
+                    "Tévére, zenére alszom el és (ha van) éjjeli fénnyel alszom"
+                ],
+                "AnswerValues": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        ],
+        "Results": [
+            "13 - 21 Gratulálunk, te tudod, hogy kell igazán egészségesen élni. Ami nagyon fontos, hogy továbbra is figyelj oda a megfelelő hidratálásra és a rostbevitelre. Ha még nem próbáltad, akkor itt az ideje kipróbálni az alternatív fehérje megoldásokat is. Szuper egészséges és finom tud lenni. Egyre vigyázz, azért ne hajtsd túl magad. ;)",
+            "22 - 30 Jó úton jársz, de még van mit javítani az étkezéseden. Figyelj a rost és a megfelelő fehérje bevitelre (hal, pulyka vagy csirke legyen a fő és a hüvelyes zöldségek). Nézz utána a mediterrán étrendnek, a tested meg fogja hálálni. A nassolást, amennyire lehet, mellőzd. A nyugodt alváshoz pedig elengedhetetlen a jó környezet, a sötét szoba. Nyugi, nincs szörny az ágy alatt. ;)",
+            "31 - 39 Ajjaj, nagy a baj. Nem figyelsz az étkezésedre. Ha ezen nem változtatsz, komoly egészségügyi következményei is lehetnek (mint a cukorbetegség, a magas vérnyomás vagy a korai csontritkulás)."
+        ]
+    }
+]
