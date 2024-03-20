@@ -113,7 +113,9 @@ body {
 
 #answerContainer {
   height: 82.5%;
+  font-size: large;
 }
+
 
 #content {
   height: calc(100vh - 136px);
@@ -195,6 +197,19 @@ body {
   padding-bottom: 30px;
   margin-top: 50px;
   background-color: rgba(146, 241, 146, 0.8);
+}
+#reloadButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#reloadButton:hover {
+  background-color: #3ca374;
 }
 
 #title {

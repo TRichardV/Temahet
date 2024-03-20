@@ -3,6 +3,9 @@ let currentQuestion = 0;
 let questionAmmount = 0;
 const answerContainer = document.getElementById("answerContainer");
 const blurBox = document.getElementById("blurBox");
+reloadButton.style.display = "none";
+
+const shits = answerContainer.children;
 
 async function AnswerChoise(value) {
     if ((currentQuestion + 1) != questionAmmount) {
@@ -21,13 +24,23 @@ async function AnswerChoise(value) {
                 document.getElementById("question").innerHTML = "Végeztél, pontszámod: " + totalScore;
                 if (totalScore <= 21) {
                     answerContainer.innerHTML = data[0].Results[0];
+                reloadButton.style.display = "block"; 
+
                 }
                 else if (totalScore <= 30) {
                     answerContainer.innerHTML = data[0].Results[1];
+                reloadButton.style.display = "block"; 
+
                 }
                 else {
                     answerContainer.innerHTML = data[0].Results[2];
+                reloadButton.style.display = "block"; 
+                    
                 }
+                
+                //for (let i = 0; i < shits.length; i++) {
+                //    childElements[i].style.padding = '10%';}
+           
             })
     }
 }
@@ -113,3 +126,9 @@ function PlayBlur(element){
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+document.getElementById('reloadButton').addEventListener('click', function() {
+    location.reload();
+    
+
+  });
