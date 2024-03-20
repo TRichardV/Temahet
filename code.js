@@ -15,7 +15,6 @@ async function AnswerChoise(value) {
         blurBox.style.pointerEvents = "auto";
     }
     else {
-        SetBoxPosition();
         fetch("data.json")
             .then((res) => res.json())
             .then((data) => {
@@ -45,7 +44,7 @@ function LoadQuestion(index) {
                     <div class="hexagon">
                         <div class="option-box inner-hexagon">
                             <div class="option text-center">
-                                <img src="img/you.jpg" draggable="false">
+                                <img src="img/${(index * 3) + i}.jpg" draggable="false">
                                 <br><br>
                                 <p>${data[0].Questions[index].Answers[i]}</p>
                             </div>
@@ -53,7 +52,7 @@ function LoadQuestion(index) {
                     </div>
                 </div>
                 `
-                //<img src="img/${(index * 3) + i}.jpg" draggable="false">
+               
                 answerContainer.innerHTML += card;
             }
             document.getElementById("question").innerHTML = data[0].Questions[index].Question;
