@@ -44,7 +44,7 @@ function LoadQuestion(index) {
                     <div class="hexagon">
                         <div class="option-box inner-hexagon">
                             <div class="option text-center">
-                                <img src="img/${(index * 3) + i}.jpg" draggable="false">
+                                <img src="img/${(index * 3) + i + 1}.jpg" draggable="false" id="cardIMG">
                                 <br><br>
                                 <p>${data[0].Questions[index].Answers[i]}</p>
                             </div>
