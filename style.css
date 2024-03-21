@@ -1,7 +1,8 @@
 body {
   background-color: #eaf7ea;
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(img/question-bg.jpg);
 
 }
 
@@ -23,7 +24,7 @@ body {
 }
 
 .box {
-  border: 5px solid #2e8b57;
+  
   border-radius: 10px;
   padding: 20px;
   min-height: 385px;
@@ -114,6 +115,7 @@ body {
 #answerContainer {
   height: 82.5%;
   font-size: large;
+  background-color: whitesmoke;
 }
 
 
@@ -155,6 +157,15 @@ body {
   text-align: justify;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.box{
+  background-color: rgba(241, 241, 241, 0.781);
+  
+  position: relative;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 8px #0000006b;
 }
 
 .fancy {

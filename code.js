@@ -3,9 +3,7 @@ let currentQuestion = 0;
 let questionAmmount = 0;
 const answerContainer = document.getElementById("answerContainer");
 const blurBox = document.getElementById("blurBox");
-reloadButton.style.display = "none";
 
-const shits = answerContainer.children;
 
 async function AnswerChoise(value) {
     if ((currentQuestion + 1) != questionAmmount) {
@@ -23,23 +21,26 @@ async function AnswerChoise(value) {
             .then((data) => {
                 document.getElementById("question").innerHTML = "Végeztél, pontszámod: " + totalScore;
                 if (totalScore <= 21) {
-                    answerContainer.innerHTML = data[0].Results[0];
-                reloadButton.style.display = "block"; 
+                    answerContainer.innerHTML = data[0].Results[0] +"<br>" +"<br>" + "<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>" ;
+                    
+                
 
                 }
                 else if (totalScore <= 30) {
-                    answerContainer.innerHTML = data[0].Results[1];
-                reloadButton.style.display = "block"; 
+                    answerContainer.innerHTML = data[0].Results[1]+"<br>" +"<br>" + "<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>";
+                
 
                 }
                 else {
-                    answerContainer.innerHTML = data[0].Results[2];
-                reloadButton.style.display = "block"; 
+                    answerContainer.innerHTML = data[0].Results[2]+"<br>" +"<br>" +"<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>";
+                 
                     
                 }
                 
-                //for (let i = 0; i < shits.length; i++) {
-                //    childElements[i].style.padding = '10%';}
+                answerContainer.style.padding = '10%';
+                answerContainer.style.fontSize = 'large';
+                answerContainer.style.fontWeight = 'bold';
+
            
             })
     }
@@ -127,8 +128,6 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-document.getElementById('reloadButton').addEventListener('click', function() {
+function reload(){
     location.reload();
-    
-
-  });
+}
