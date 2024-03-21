@@ -11,6 +11,7 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
+  box-shadow: 0px 5px 8px #0000006b;
 }
 
 .footer {
@@ -18,21 +19,24 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  box-shadow: 0px -5px 8px #0000006b;
 }
 
 .box {
-  
   border-radius: 10px;
-  padding: 20px;
-  min-height: 385px;
+  padding: 10px;
+  min-height: 415px;
+  background-color: rgba(241, 241, 241, 0.781);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 10px 8px #0000006b;
 }
 
 .question {
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .option {
@@ -42,7 +46,7 @@ body {
 .option-box {
   padding: 10px;
   margin-bottom: 10px;
-  max-height: 250px;
+ max-height: 275px;
 }
 
 .option img {
@@ -55,7 +59,7 @@ body {
 .option p {
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .btn-primary {
@@ -91,6 +95,7 @@ body {
 .gentle-tilt-move-shake {
   cursor: pointer;
   user-select: none;
+  filter: drop-shadow(5px 10px 8px #0000006b);
 }
 
 .gentle-tilt-move-shake:hover {
@@ -103,7 +108,7 @@ body {
 }
 
 .inner-hexagon {
-  background-color: #d0d7d3;
+  background-color: #a7ffcd;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
   transform: scale(0.97);
 }
@@ -115,7 +120,6 @@ body {
 #answerContainer {
   height: 82.5%;
   font-size: large;
-  background-color: whitesmoke;
 }
 
 
@@ -158,15 +162,6 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.box{
-  background-color: rgba(241, 241, 241, 0.781);
-  
-  position: relative;
-  padding-bottom: 35px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 5px 10px 8px #0000006b;
-}
 
 .fancy {
   --b: 6px;
@@ -193,7 +188,7 @@ body {
 }
 
 #light-green{
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-image: url(img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,6 +238,35 @@ body {
   overflow: auto;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+  .bottom{
+    position: fixed;
+    bottom: 0;
+  }  
+}
+
+@media only screen and (max-width: 1400px) {
+  .option-box{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .option-box{
+    min-height: 250px;
+    font-size: 18px;
+  }  
+  .box{
+    min-height: 0;
+  }
+}
+
 @keyframes tilt-n-move-shaking {
   0% { transform: translate(0, 0) rotate(0deg); }
   25% { transform: translate(2px, 2px) rotate(2deg); }
@@ -253,6 +277,8 @@ body {
 
 @keyframes blurEffect {
   0% { filter: blur(0px); }
-  50% { filter: blur(10px); }
+  50% { filter: blur(5px); }
   100% { filter: blur(0px); }
 }
+
+

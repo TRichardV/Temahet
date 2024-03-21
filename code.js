@@ -19,29 +19,34 @@ async function AnswerChoise(value) {
         fetch("data.json")
             .then((res) => res.json())
             .then((data) => {
-                document.getElementById("question").innerHTML = "Végeztél, pontszámod: " + totalScore;
+                document.getElementById("question").innerHTML = "Gratulálok, sikeresen kitöltötted a tesztet!";
                 if (totalScore <= 21) {
-                    answerContainer.innerHTML = data[0].Results[0] +"<br>" +"<br>" + "<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>" ;
-                    
-                
-
+                    answerContainer.innerHTML = `
+                        <div class="col-lg-8 col-md-12"><p>${data[0].Results[0]}</p></div>
+                        <div class="col-lg-4 col-md-12"><img src="img/healthy.jpg" class="img-fluid"></div><br>
+                        <button onclick='reload()' id='reloadButton'>Vissza a főoldalra</button>
+                    `
                 }
                 else if (totalScore <= 30) {
-                    answerContainer.innerHTML = data[0].Results[1]+"<br>" +"<br>" + "<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>";
-                
-
+                    answerContainer.innerHTML = `
+                        <div class="col-lg-8 col-md-12"><p>${data[0].Results[1]}</p></div>
+                        <div class="col-lg-4 col-md-12"><img src="img/partly-healthy.jpg" class="img-fluid"></div><br>
+                        <button onclick='reload()' id='reloadButton'>Vissza a főoldalra</button>
+                    `           
                 }
                 else {
-                    answerContainer.innerHTML = data[0].Results[2]+"<br>" +"<br>" +"<button onclick='reload()' id='reloadButton'>Vissza a főoldalra!</button>";
-                 
-                    
+                    answerContainer.innerHTML = `
+                        <div class="col-lg-8 col-md-12"><p>${data[0].Results[2]}</p></div>
+                        <div class="col-lg-4 col-md-12"><img src="img/unhealthy.jpg" class="img-fluid"></div><br>
+                        <button onclick='reload()' id='reloadButton'>Vissza a főoldalra</button>
+                    `
                 }
                 
-                answerContainer.style.padding = '10%';
+                answerContainer.style.paddingLeft = '10%';
+                answerContainer.style.paddingRight = '10%';
                 answerContainer.style.fontSize = 'large';
+                answerContainer.style.textAlign = "justify"
                 answerContainer.style.fontWeight = 'bold';
-
-           
             })
     }
 }
@@ -94,6 +99,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
         content.style.display = "block";
         button.style.display = "none";
         text.style.display = "none";
+        document.getElementsByClassName("footer")[0].classList.add("bottom");
         LoadQuestion(currentQuestion);
         SetBoxPosition();
 
@@ -112,7 +118,7 @@ function SetBoxPosition() {
         content.style.height = "100%";
     }
     else{
-        innerContainer.classList.add("mt-5");
+        content.classList.add("my-5");
     }
 }
 
